@@ -1,5 +1,5 @@
 {
-    "version": "1.4.1.1027",
+    "version": "1.4.1.1032",
     "description": "Locate files and folders by name instantly.",
     "homepage": "https://www.voidtools.com",
     "license": "MIT",
@@ -9,16 +9,16 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://www.voidtools.com/Everything-1.4.1.1027.x64.zip",
-            "hash": "eaaf98041a25d09b1677f72a1c326a0e20acfd70fa550f7ad1cde8363b69cfcb"
+            "url": "https://www.voidtools.com/Everything-1.4.1.1032.x64.zip",
+            "hash": "698df475ec44e638f66f1b6a32d28fea613cec78d3b6310e6abe53431eeb940c"
         },
         "32bit": {
-            "url": "https://www.voidtools.com/Everything-1.4.1.1027.x86.zip",
-            "hash": "72d35c18b627750d4abf6b28d9ec6c5b270e0144512cedecf4bbb3f701605f34"
+            "url": "https://www.voidtools.com/Everything-1.4.1.1032.x86.zip",
+            "hash": "156db5beb747d69470518a7b9b55af11efc4d3285ddb7cc013c0cc13ced5f237"
         },
         "arm64": {
-            "url": "https://www.voidtools.com/Everything-1.4.1.1027.ARM64.zip",
-            "hash": "aba870cebf582adfd5fa5fd2c32cd1275d38dff66bc0a13f9e521fea25521772"
+            "url": "https://www.voidtools.com/Everything-1.4.1.1032.ARM64.zip",
+            "hash": "23dca1a64574bf30c9988bbaf5f1d201a0ec7ee9a15e12270ae92a52183cccc8"
         }
     },
     "pre_install": [
