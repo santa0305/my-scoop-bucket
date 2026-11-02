@@ -27,7 +27,7 @@
         "elseif (Test-Path \"$dir\\Everything.exe\") { Rename-Item \"$dir\\Everything.exe\" -NewName 'my-everything.exe' }",
         "ensure \"$persist_dir\" | Out-Null",
         "if (!(Test-Path \"$persist_dir\\Everything.ini\")) { Start-Process -Wait \"$dir\\my-everything.exe\" -Args @('-install-config null') }",
-        "Get-ChildItem \"$persist_dir\\*\" -Include 'Bookmarks.csv', 'Everything.db', 'Everything.ini', 'Filters.csv', 'Search History.csv' | Copy-Item -Destination \"$dir\" -ErrorAction SilentlyContinue"
+        "Get-ChildItem \"$persist_dir\\*\" -Include 'Bookmarks.csv', 'Everything.db', 'Everything.ini', 'Filters.csv', 'Search History.csv', 'Run History.csv' | Copy-Item -Destination \"$dir\" -ErrorAction SilentlyContinue"
     ],
     "post_install": [
         "$app_path = \"$dir\\my-everything.exe\".Replace('\\', '\\\\')",
@@ -63,7 +63,7 @@
         " }",
         "}",
         "if ($cmd -eq 'uninstall') { reg import \"$dir\\uninstall-context.reg\" }",
-        "Get-ChildItem \"$dir\\*\" -Include 'Bookmarks.csv', 'Everything.db', 'Everything.ini', 'Filters.csv', 'Search History.csv' | Copy-Item -Destination \"$persist_dir\" -ErrorAction SilentlyContinue -Force"
+        "Get-ChildItem \"$dir\\*\" -Include 'Bookmarks.csv', 'Everything.db', 'Everything.ini', 'Filters.csv', 'Search History.csv', 'Run History.csv' | Copy-Item -Destination \"$persist_dir\" -ErrorAction SilentlyContinue -Force"
     ],
     "checkver": "Download Everything ([\\d.]+)",
     "autoupdate": {
